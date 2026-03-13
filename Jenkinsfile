@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Build image'){
             steps{
-                sh 'docker version'
+                sh 'whoami'
                 sh 'docker build -t flask-app .'
             }
         }
