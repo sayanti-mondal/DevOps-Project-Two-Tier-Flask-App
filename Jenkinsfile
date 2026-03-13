@@ -1,10 +1,5 @@
 pipeline{
-    agent {
-         docker {
-            image 'docker:24-dind'
-            args '--privileged'  // allow nested Docker
-        }
-    }  
+    agent any
     stages{
         stage('Clone repo'){
             steps{
